@@ -5,11 +5,11 @@ import sys
 def init_subreddit():
 	"this function is used to initialise a reddit instnace"
 
-	reddit = praw.Reddit(client_id='rVcffNvW_kXs3g',
-                     client_secret='KmQV2ldcsS0vkIHmdwGF1BrZNNs',
-                     password='thisisapassword',
+	reddit = praw.Reddit(client_id='pl',
+                     client_secret='pl',
+                     password='pl',
                      user_agent='testscript by /u/kurithesheep',
-                     username='diaryupdator')
+                     username='pl')
 
 	return reddit
 
