@@ -1,5 +1,6 @@
 import praw
 import time
+import sys
 
 def init_subreddit():
 	"this function is used to initialise a reddit instnace"
@@ -14,7 +15,13 @@ def init_subreddit():
 
 reddit = init_subreddit()		#obtaining a reddit object
 post_title = time.asctime()		#post title, which is set to the current date and time
-self_text = input("please enter the text you wish to submit:\n")
+print("please enter the text you wish to submit(Ctrl+D to end submission):")
+
+userInput = sys.stdin.readlines()	#creating a list of lines/paras
+self_text=""
+
+for i in userInput:				#forming one single submissions string
+	self_text += i
 
 sure = input("Submit? (y/n) ")
 
