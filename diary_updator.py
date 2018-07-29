@@ -8,7 +8,7 @@ def init_subreddit():
 	reddit = praw.Reddit(client_id='pl',
                      client_secret='pl',
                      password='pl',
-                     user_agent='testscript by /u/kurithesheep',
+                     user_agent='lmao this works somehow!',
                      username='pl')
 
 	return reddit
