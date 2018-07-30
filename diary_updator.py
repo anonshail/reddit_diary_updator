@@ -26,7 +26,7 @@ for i in userInput:				#forming one single submissions string
 sure = input("Submit? (y/n) ")
 
 if(sure == 'y' or sure == 'Y'):
-	reddit.subreddit('DiaryOfMyLife').submit(post_title, selftext = self_text)
+	reddit.subreddit('placeholderformydiaryssub').submit(post_title, selftext = self_text)
 	print("Submission made succesfully!")
 
 else:
